@@ -1,0 +1,28 @@
+class add
+{
+    int a,b,c;
+    public void addition(int a,int b)
+    {
+        c=a+b;
+        System.out.println(c);
+    }
+}
+class sub extends add
+{
+    int x,y,z;
+    public void subtraction(int x,int y)
+    {
+        z=x-y;
+        System.out.println(z);
+    }
+}
+public class calculator
+{
+    public static void main(String args[])
+    {
+       sub obj=new sub();
+       obj.addition(10,20);
+       obj.subtraction (20,10);
+       
+    }
+}
